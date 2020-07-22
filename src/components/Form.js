@@ -16,7 +16,7 @@ class Form extends Component {
     fetch('https://restcountries.eu/rest/v2/all')
       .then((data) => data.json())
       .then((data) => {
-        this.setState({ countries: data.slice(0, 10) });
+        this.setState({ countries: data.slice(0, 30) });
       })
       .catch((err) => console.log(err));
   }
